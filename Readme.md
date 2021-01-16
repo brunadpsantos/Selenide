@@ -1,5 +1,10 @@
 # Automação do site QaNinja
 Projeto de automação de teste web utilizando selenide na linguagem java.
+
+#### Como configurar o ambiente do zero em sua máquina
+
+Será necessário instalar o docker em sua máquina e posteriormente subir as imagens e seus containers, para isso siga os comandos contidos na pasta src > main > resources > Docker.md contido neste projeto. 
+
 #### Como rodar o projeto
 1 - Suba os containers 
 
@@ -29,7 +34,7 @@ Realize a configuração do banco de dados:
 sudo vim /etc/hosts
 ```
 - Adicione sua senha do computador 
-- Clique na tecla i para abilitar a opção de insert
+- Clique na tecla i para habilitar a opção de insert
 - Vá ate o final da linha e adicione:
 ```
 127.0.0.1       pgdb
@@ -94,7 +99,3 @@ A Allure Framework é uma ferramenta de relatório de teste leve e flexível que
 Sempre que rodar os testes este relatório deve ser gerado novamente utilizando o mesmo procedimento acima. 
 
 Obs: A pasta allure-results será criada automaticamente, logo após rodar o primeiro teste automatizado. Caso a pasta nao apareça, dê um reload from disk no projeto. 
-
-#### Como configurar o ambiente do zero em sua máquina
-
-Será necessário instalar o docker em sua máquina e posteriormente subir as imagens e seus containers, para isso siga os comandos contidos na pasta src > main > resources > Docker.md contido neste projeto. 
